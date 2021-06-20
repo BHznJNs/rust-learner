@@ -1,3 +1,4 @@
+// Output formatly | 格式化输出
 fn main() {
     /*
         format! : Output text which was formated
@@ -22,9 +23,9 @@ fn main() {
     let num = 123;
     println!("{}", format!("{}", num));
     // format!("{}", num)
-    eprintln!("{}", format!("{:b}", num));
+    println!("{}", format!("{:b}", num));
     // format!("0o{:b}", num) => 1111011 (2进制)
-    eprintln!("{}", format!("0o{:o}", num));
+    println!("{}", format!("0o{:o}", num));
     // format!("0o{:o}", num) => 0o173 (8进制)
     println!("{}", format!("0x{:X}", num));
     // format!("0x{:X}", num) => 0x7B (16进制)
