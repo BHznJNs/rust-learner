@@ -39,22 +39,23 @@ fn main() {
         在下面的语句中，数字 10 会代替字符串中的 {}。
     */
     println!("This number is {}", 10);
-    /*
-        The result | 输出结果：
-        This number is 10
-    */
+    // This number is 10
 
-    //————————————————————————————————————————
+    /*
+        You can use boolean logic as an argv.
+        你可以使用布尔逻辑判断作为一个参数。
+    */
+    let num1 :i8 = 1;
+    let num2 :i8 = 2;
+    println!("The num2 is bigger num1: {}", num2 > num1);
+    // The num2 is bigger num1: true
 
     /*
         You can replace several {} by input several argv.
         你可以通过传入多个参数来实现对多个 {} 进行替换。
     */
     println!("This number is {} and that number is {}", 10, 20);
-    /*
-        The result | 输出结果：
-        This number is 10, 这个数字是 20
-    */
+    // This number is 10, 这个数字是 20
 
     //————————————————————————————————————————
 
@@ -67,28 +68,20 @@ fn main() {
             println!("This number is {1} and that number is {0}", 10);
     */
     println!("This number is {1} and that number is {0}", 10, 20);
-    /*
-        The result | 输出结果：
-        This number is 20 and that number is 10
-    */
+    // This number is 20 and that number is 10
 
     /*
         You can also add an index to reuse one argv.
         你也可以在 {} 中添加索引来重复使用同一个参数。
     */
     println!("This number is {0} and that number is also {0}", 10);
-    /*
-        The result | 输出结果：
-        This number is 10 and that number is also 10
-    */
+    // This number is 10 and that number is also 10
+
 
     /*
         You can name the argv.
         你可以给参数命名（这个语法糖不错）。
     */
     println!("This argv's name is {name}", name="Flex");
-    /*
-        The result | 输出结果：
-        This argv's name is Flex
-    */
+    // This argv's name is Flex
 }
