@@ -24,7 +24,10 @@ fn main() {
 
         let guess :u32 = match guess.trim().parse() {
             Ok(num) => num,
-            Err(_) => continue
+            Err(_) => {
+                println!("Please input a number!");
+                continue;
+            }
         };
         /*
             The trim method can elimilate whitespace at the begining and end of a string.
@@ -47,7 +50,7 @@ fn main() {
                     当 guess 等于 secret_number 时，退出循环。
                 */
                 println!("It's right!");
-                break
+                break;
             }
         }
         /*
